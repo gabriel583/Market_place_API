@@ -1,0 +1,632 @@
+{
+	"info": {
+		"_postman_id": "c90c1df9-74cd-4327-bb9c-2844a1b87b60",
+		"name": "Projeto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/users/:userId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"users",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products By User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/users/products/:userId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"users",
+								"products",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Unsold Products By User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/users/unsoldProducts/:userId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"users",
+								"unsoldProducts",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Sign In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\": \"\",\r\n    \"Password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/users/signIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"users",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\": \"\",\r\n    \"Password\": \"\",\r\n    \"Name\": \"\",\r\n    \"Email\": \"\",\r\n    \"Phone\": \"\",\r\n    \"Avatar\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Username\": \"\",\r\n    \"Password\": \"\",\r\n    \"Name\": \"\",\r\n    \"Email\": \"\",\r\n    \"Phone\": \"\",\r\n    \"Avatar\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/users/:userId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"users",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/users/:userId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"users",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Unsold Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/products/unsold",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"products",
+								"unsold"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/products/:productId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"products",
+								":productId"
+							],
+							"variable": [
+								{
+									"key": "productId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Title",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Title\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/products/productTitle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"products",
+								"productTitle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Title\": \"\",\r\n    \"Description\": \"\",\r\n    \"Price\": null,\r\n    \"Image\": null,\r\n    \"userId\": null,\r\n    \"categoryId\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Title\": \"\",\r\n    \"Description\": \"\",\r\n    \"Price\": null,\r\n    \"Image\": null,\r\n    \"IsSold\": null,\r\n    \"userId\": null,\r\n    \"categoryId\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/products/:productId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"products",
+								":productId"
+							],
+							"variable": [
+								{
+									"key": "productId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/products/:productId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"products",
+								":productId"
+							],
+							"variable": [
+								{
+									"key": "productId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/category/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/category/:categoryId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"category",
+								":categoryId"
+							],
+							"variable": [
+								{
+									"key": "categoryId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Unsold Products By Category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/category/products/:categoryId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"category",
+								"products",
+								":categoryId"
+							],
+							"variable": [
+								{
+									"key": "categoryId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category By Name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/category/categoryName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"category",
+								"categoryName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/category/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4545/category/:categoryId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"category",
+								":categoryId"
+							],
+							"variable": [
+								{
+									"key": "categoryId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4545/category/:categoryId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4545",
+							"path": [
+								"category",
+								":categoryId"
+							],
+							"variable": [
+								{
+									"key": "categoryId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
